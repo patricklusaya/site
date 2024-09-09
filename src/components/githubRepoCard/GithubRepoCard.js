@@ -1,9 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages";
 import "./GithubRepoCard.css";
 import { Fade } from "react-reveal";
+import { Button, Modal } from "react-bootstrap";
 
 export default function GithubRepoCard({ repo, theme }) {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   function openRepoinNewTab(url) {
     var win = window.open(url, "_blank");
     win.focus();
@@ -12,7 +18,8 @@ export default function GithubRepoCard({ repo, theme }) {
   return (
     <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
       <Fade bottom duration={2000} distance="40px">
-        <div key={repo.id} onClick={() => openRepoinNewTab(repo.url)}>
+        <div key={repo.id}>
+          {/* onClick={() => openRepoinNewTab(repo.url)} */}
           <div className="repo-name-div">
             <svg
               aria-hidden="true"
@@ -35,43 +42,58 @@ export default function GithubRepoCard({ repo, theme }) {
             {repo.description}
           </p>
           <div className="repo-details">
-            <p
+            <div
               className="repo-creation-date subTitle"
               style={{ color: theme.secondaryText }}
             >
-              Created on {repo.createdAt.split("T")[0]}
-            </p>
+              <Button
+                variant="primary"
+                onClick={handleShow}
+                style={{ padding: "10px", borderRadius: "20px" }}
+              >
+                View Project
+              </Button>
+            </div>
+
             <ProjectLanguages
               className="repo-languages"
-              logos={repo.languages}
+              langs={repo.languages}
             />
           </div>
-          {/* <div className="repo-stats">
-          <div className="repo-left-stat">
-            <span>
-              <div className="language-color" style={{ backgroundColor: repo.node.primaryLanguage.color }}></div>
-              <p>{repo.node.primaryLanguage.name}</p>
-            </span>
-            <span>
-              <svg aria-hidden="true" className="octicon" height="16" role="img" viewBox="0 0 10 16" width="10" fill="rgb(106, 115, 125)" className="repo-star-svg">
-                <path
-                  fill-rule="evenodd"
-                  d="M8 1a1.993 1.993 0 0 0-1 3.72V6L5 8 3 6V4.72A1.993 1.993 0 0 0 2 1a1.993 1.993 0 0 0-1 3.72V6.5l3 3v1.78A1.993 1.993 0 0 0 5 15a1.993 1.993 0 0 0 1-3.72V9.5l3-3V4.72A1.993 1.993 0 0 0 8 1zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3 10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zm3-10c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"
-                ></path>
-              </svg>
-              <p>{repo.node.forkCount}</p>
-            </span>
-            <span>
-              <svg aria-hidden="true" className="octicon" height="16" role="img" viewBox="0 0 14 16" width="14" fill="rgb(106, 115, 125)" className="repo-star-svg">
-                <path fill-rule="evenodd" d="M14 6l-4.9-.64L7 1 4.9 5.36 0 6l3.6 3.26L2.67 14 7 11.67 11.33 14l-.93-4.74L14 6z"></path>
-              </svg>
-              <p>{repo.node.stargazers.totalCount}</p>
-            </span>
-          </div>
-          <div className="repo-right-stat">
-            <p>{repo.node.diskUsage} KB</p>
-          </div>
-        </div> */}
+        </div>
+        <div>
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header>
+              <Modal.Title> {repo.name} </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+              {repo.description}
+              <br />
+              <a href={repo.url} target="_blank">
+                Github
+              </a>
+              <br />
+
+              <div>
+                {repo.isLive ? (
+                  <a href={repo.projectUrl} target="_blank">
+                    Live In Action
+                  </a>
+                ) : (
+                  <p></p>
+                )}
+              </div>
+            </Modal.Body>
+            <Modal.Footer>
+              <Button
+                variant="secondary"
+                onClick={handleClose}
+                style={{ padding: "10px", borderRadius: "20px" }}
+              >
+                Close
+              </Button>
+            </Modal.Footer>
+          </Modal>
         </div>
       </Fade>
     </div>

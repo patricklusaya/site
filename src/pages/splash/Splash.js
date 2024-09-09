@@ -2,12 +2,15 @@ import React, { Component } from "react";
 import "./Splash.css";
 import { Redirect } from "react-router-dom";
 import LoaderLogo from "../../components/Loader/LoaderLogo.js";
+import { Fade } from "react-reveal";
 
 function AnimatedSplash(props) {
   return (
     <div className="logo_wrapper">
       <div className="screen" style={{ backgroundColor: props.theme.splashBg }}>
-        <LoaderLogo id="logo" theme={props.theme} />
+        <Fade bottom duration={500} distance="40px">
+          <p style={{ color: "white", fontSize: "40px" }}>Patrick's </p>
+        </Fade>
       </div>
     </div>
   );
@@ -22,7 +25,7 @@ class Splash extends Component {
   }
 
   componentDidMount() {
-    this.id = setTimeout(() => this.setState({ redirect: true }), 5500);
+    this.id = setTimeout(() => this.setState({ redirect: true }), 1500);
   }
 
   componentWillMount() {

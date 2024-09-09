@@ -2,121 +2,95 @@
   "data": [
     {
       "id": "R_kgDOJWL0-g",
-      "name": "mdp-diffusion",
+      "name": "fc4",
       "createdAt": "2023-04-13T04:18:19Z",
-      "url": "https://github.com/ashutosh1919/mdp-diffusion",
-      "description": "Text-guided image editing by manipulating diffusion path without any training.",
+      "projectUrl": "https://footballconnect4.en.uptodown.com/android",
+      "url": "https://github.com/patricklusaya/fc4",
+      "description": "  A mobile game(Android & iOS) that blends classic Connect 4 with football trivia, where Players take turns answering football-related questions to earn their moves, aiming to connect four discs in a row. It’s a fun and competitive way for football fans to test their knowledge while enjoying a strategic game. ",
       "isFork": false,
+      "isLive": true,
       "languages": [
         {
-          "name": "Python",
+          "name": "React Native",
           "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "Jupyter Notebook",
-          "iconifyClass": "logos-jupyter"
         }
       ]
     },
     {
       "id": "R_kgDOG_vYHA",
-      "name": "explainable-cnn",
+      "name": "Enquiry Bot",
       "createdAt": "2022-03-13T20:41:33Z",
-      "url": "https://github.com/ashutosh1919/explainable-cnn",
-      "description": "📦 PyTorch based visualization package for generating layer-wise explanations for CNNs.",
+      "projectUrl": "",
+      "url": "https://github.com/patricklusaya/College-Enquiry-Bot",
+      "description": " Enquiry Bot is a chatbot designed to handle and respond to college-related queries using the Chatterbot library and Flask framework. It provides quick and automated responses to common questions about admissions, courses, fees, campus facilities, and more. Built with machine learning capabilities, the bot continuously improves its responses through user interactions..",
       "isFork": false,
+      "isLive": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "Python"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
+      "name": "Goooal",
       "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "🔥 The Complete Customizable Software Developer Portfolio Template which lets you showcase your work and provides each and every detail about you as Software Developer.",
+      "projectUrl": "https://goooal.netlify.app/",
+      "url": "https://github.com/patricklusaya/Goooal",
+      "description": "Goooal is a dynamic website built using Angular that delivers real-time football highlights and live scores. Powered by the SoccerBat API, Goooal provides up-to-the-minute match results,  and thrilling highlight videos from leagues around the world.",
       "isFork": false,
+      "isLive": true,
       "languages": [
         {
-          "name": "HTML",
-          "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "Dockerfile",
-          "iconifyClass": "simple-icons:docker"
+          "name": "Angular"
         }
       ]
     },
     {
       "id": "R_kgDOG0_8uQ",
-      "name": "react-awesome-shapes",
+      "name": "Minahs Beauty Studio",
       "createdAt": "2022-02-11T14:50:20Z",
-      "url": "https://github.com/ashutosh1919/react-awesome-shapes",
-      "description": "🌀 Insert Awesome Shapes into Your React Site with Ease.",
+      "projectUrl": "https://minahsbeautystudioo.web.app/",
+      "url": "#",
+      "description": "Minah's Beauty Studio is an intuitive booking website designed for a beauty studio, built using React. The platform allows clients to easily browse services and schedule appointments with just a few clicks. The site offers real-time booking management, ensuring a seamless experience for both clients and the studio. ",
       "isFork": false,
+      "isLive": true,
       "languages": [
         {
-          "name": "HTML",
+          "name": "React",
           "iconifyClass": "logos-html-5"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
-        },
-        {
-          "name": "Shell",
-          "iconifyClass": "simple-icons:shell"
-        },
-        {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
         }
       ]
     },
     {
       "id": "R_kgDOGcPKSQ",
-      "name": "neuro-symbolic-sudoku-solver",
-      "createdAt": "2021-11-26T17:56:07Z",
-      "url": "https://github.com/ashutosh1919/neuro-symbolic-sudoku-solver",
-      "description": "⚙️ Solving sudoku using Deep Reinforcement learning in combination with powerful symbolic representations.",
+      "name": "MIS",
+      "projectUrl": "",
+      "url": "https://github.com/patricklusaya/hms_api",
+      "description": "The Hospital MIS (Management Information System) is a solution built using Angular for the frontend and Spring for the backend. This system streamlines hospital operations, providing efficient management of patient records, appointments, billing, and staff. The Angular interface offers a responsive and user-friendly experience for both medical professionals and administrators, allowing them to easily access and update information.",
       "isFork": false,
+      "isLive": false,
       "languages": [
         {
-          "name": "Python",
-          "iconifyClass": "logos-python"
+          "name": "Angular"
+        },
+        {
+          "name": "Spring Boot"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "react-liquidswipe",
+      "name": " DramaBuzz",
       "createdAt": "2021-01-01T08:31:51Z",
-      "url": "https://github.com/ashutosh1919/react-liquidswipe",
-      "description": "🚀 Smooth Liquid Swipe Animation to transition between different components.",
+      "projectUrl": "https://drama-buzz.web.app/",
+      "url": "https://github.com/patricklusaya/drama-buzz",
+      "description": "DramaBuzz is a  website built with React that showcases trending movies and TV shows, powered by the IMDb API. The platform provides users with up-to-date information on popular films and series, including ratings, reviews, cast details, and trailers. With a sleek and interactive interface, DramaBuzz makes it easy for entertainment enthusiasts to discover new content, track trends, and dive into detailed insights about their favorite shows and movies. ",
       "isFork": false,
+      "isLive": true,
       "languages": [
         {
-          "name": "JavaScript",
-          "iconifyClass": "logos-javascript"
-        },
-        {
-          "name": "CSS",
-          "iconifyClass": "logos-css-3"
+          "name": "Angular"
         }
       ]
     }
