@@ -399,21 +399,23 @@ const publications = {
       name: "Migration To Modular Firebase",
       createdAt: "2023-07-02T00:00:00Z",
       description: "Published in devto",
-      url: "https://arxiv.org/abs/2307.00653",
+      url:
+        "https://dev.to/patricklusaya/how-to-migrate-to-modular-firebase-sdk-a-quick-guide-10ac",
     },
     {
       id: "expoRouter",
       name: "Redux Setup",
       createdAt: "2023-09-19T00:00:00Z",
       description: "Blog published in devto",
-      url: "https://blog.paperspace.com/mdp-diffusion/",
+      url: "https://dev.to/patricklusaya/how-to-setup-redux-in-react-js-5age",
     },
     {
       id: "laravel",
       name: "Authentication In Laravel",
       createdAt: "2023-10-12T00:00:00Z",
       description: "Blog published in devto",
-      url: "https://blog.paperspace.com/consistency-models/",
+      url:
+        "https://dev.to/patricklusaya/how-to-implement-role-based-authentication-in-laravel-with-sanctum-a-step-by-step-guide-4pbk",
     },
   ],
 };
