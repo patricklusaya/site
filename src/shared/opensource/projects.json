@@ -17,6 +17,25 @@
       ]
     },
     {
+      "id": "urNINid",
+      "name": "urNIN",
+      "createdAt": "2023-04-13T04:18:19Z",
+      "url": "https://github.com/patricklusaya/urNIN",
+      "description": "  A fake NIDA Card generator.Utilizes a public API to generate fake/simulated National ID cards based on a provided National Identification Number (NIN). It’s a tool built for educational and demonstration purposes, allowing users to visualize the structure and data representation of an ID card. ",
+      "isFork": false,
+      "isLive": false,
+      "languages": [
+        {
+          "name": "PHP",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Javascript",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
       "id": "R_kgDOG_vYHA",
       "name": "Enquiry Bot",
       "createdAt": "2022-03-13T20:41:33Z",

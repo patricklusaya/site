@@ -3,6 +3,8 @@ import ProjectLanguages from "../../components/projectLanguages/ProjectLanguages
 import "./GithubRepoCard.css";
 import { Fade } from "react-reveal";
 import { Button, Modal } from "react-bootstrap";
+// Import the video from the assets
+import exampleVideo from "../../assests/urnin.mp4";
 
 export default function GithubRepoCard({ repo, theme }) {
   const [show, setShow] = useState(false);
@@ -14,6 +16,8 @@ export default function GithubRepoCard({ repo, theme }) {
     var win = window.open(url, "_blank");
     win.focus();
   }
+
+  const urNID = "urNINid"; // Replace with your actual repo ID value
 
   return (
     <div className="repo-card-div" style={{ backgroundColor: theme.highlight }}>
@@ -30,7 +34,7 @@ export default function GithubRepoCard({ repo, theme }) {
               width="12"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"
               ></path>
             </svg>
@@ -69,20 +73,34 @@ export default function GithubRepoCard({ repo, theme }) {
             <Modal.Body>
               {repo.description}
               <br />
-              <a href={repo.url} target="_blank">
+              <a href={repo.url} target="_blank" rel="noopener noreferrer">
                 Github
               </a>
               <br />
 
               <div>
                 {repo.isLive ? (
-                  <a href={repo.projectUrl} target="_blank">
+                  <a
+                    href={repo.projectUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     Live In Action
                   </a>
                 ) : (
                   <p></p>
                 )}
               </div>
+
+              {/* Conditionally render the video */}
+              {repo.id === urNID && (
+                <div>
+                  <video width="100%" controls>
+                    <source src={exampleVideo} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              )}
             </Modal.Body>
             <Modal.Footer>
               <Button
