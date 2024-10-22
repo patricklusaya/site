@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "PatrickLusaya",
 
   subTitle:
-    "Hey! I'm a Software Engineer, and in this game, it's all or nothing. Either I'm building apps that keep users glued to their screens, or I risk putting them to sleep—and trust me, I’m all about the first. There's nothing worse than a product people hate, and I'm all about creating things people can't help but love. I love simplicity, I love beautiful designs, and most of all, I love to code",
+    " I'm a Software Developer, and in this game, it's all or nothing. Either I'm building apps that keep users glued to their screens, or I risk putting them to sleep—and trust me, I’m all about the first. There's nothing worse than a product people hate, and I'm all about creating things people can't help but love. I love simplicity, I love beautiful designs, and most of all, I love to code",
   resumeLink:
     "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
   portfolio_repository: "https://github.com/patricklusaya",
@@ -101,19 +101,19 @@ const skills = {
       fileName: "BackendImg",
       imagePath: "back.png",
       skills: [
-        "⚡ Developing robust backend services using Node.js and Spring Boot",
+        "⚡ Developing robust backend services using Node.js, Laravel and Spring Boot",
         "⚡ Designing and integrating RESTful APIs",
         "⚡ Ensuring secure and efficient data handling",
       ],
       softwareSkills: [
         {
           skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
+          fontAwesomeClassname: "simple-icons:express",
           style: { color: "#339933" },
         },
         {
-          skillName: "ExpressJS",
-          fontAwesomeClassname: "simple-icons:express",
+          skillName: "Laravel",
+          fontAwesomeClassname: "simple-icons:laravel",
           style: { color: "#000000" },
         },
         {

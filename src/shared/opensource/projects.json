@@ -36,6 +36,25 @@
       ]
     },
     {
+      "id": "laragigsid",
+      "name": "laragigs",
+      "createdAt": "2023-04-13T04:18:19Z",
+      "url": "https://github.com/patricklusaya/laragigs",
+      "description": " A Simple web application designed to connect job seekers with employers by providing a platform to create, manage, and browse job listings.Employers can create, edit, and delete job listings with details such as job title, description, requirements, and company information ",
+      "isFork": false,
+      "isLive": false,
+      "languages": [
+        {
+          "name": "laravel",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Tailwind",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
       "id": "R_kgDOG_vYHA",
       "name": "Enquiry Bot",
       "createdAt": "2022-03-13T20:41:33Z",
